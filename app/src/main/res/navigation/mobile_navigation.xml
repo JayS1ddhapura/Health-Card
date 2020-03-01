@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/nav_home"
+    android:label="Home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.hackathonproject.ui.home.HomeFragment"
+        android:label="Home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment android:id="@+id/health"
+        android:label="Health history"
+        android:name="com.example.hackathonproject.ui.healthhistory.healthFragment" />
+
+
+    <fragment
+        android:id="@+id/opdreminder"
+        android:name="com.example.hackathonproject.ui.opdreminder.opdreminderFragment"
+        android:label="OPD reminder"
+        tools:layout="@layout/opdreminder_fragment" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.hackathonproject.ui.tools.ToolsFragment"
+        android:label=""
+        tools:layout="@layout/fragment_tools" />
+
+    <fragment android:id="@+id/editprofile"
+        android:label="Edit profile"
+        android:name="com.example.hackathonproject.ui.editprofilepack.editFragment" />
+
+    <fragment android:id="@+id/medrem"
+        android:label="Medicine reminder"
+        android:name="com.example.hackathonproject.ui.medreminder.medreminderFragment" />
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.hackathonproject.ui.share.ShareFragment"
+
+        tools:layout="@layout/fragment_share" />
+
+
+
+
+</navigation>

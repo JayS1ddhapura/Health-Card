@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".labReportDisplay">
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/labReportGridLayout"
+        android:layout_width="0dp"
+        android:layout_height="260dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/headingTextView"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:text="LRID:\n\n\nLID:\n\n\nLDID:\n\n\nDate and Time:\n\n\nBy Reference of:"
+            app:layout_column="0"
+            app:layout_row="0"
+            app:layout_gravity="fill"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/detailsTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            app:layout_gravity="fill"
+            app:layout_column="1"
+            app:layout_row="0"
+            android:textSize="16sp"
+            />
+    </androidx.gridlayout.widget.GridLayout>
+
+    <androidx.gridlayout.widget.GridLayout
+        android:id="@+id/labStasticsGridLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/labReportGridLayout">
+
+        <TextView
+            android:id="@+id/NumberHeadingTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Number:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_column="0"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/nameHeadingTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Name:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_column="1"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/actualHeadingTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Actual:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_column="2"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/idealHeadingTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Ideal:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            app:layout_column="3"
+            app:layout_row="0" />
+
+        <TextView
+            android:id="@+id/numberTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="12347"
+            android:textSize="16dp"
+            app:layout_gravity="fill"
+            app:layout_column="0"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/nameTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="Diabetese"
+            android:textSize="16dp"
+            app:layout_gravity="fill"
+            app:layout_column="1"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/actualTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="15%"
+            android:textSize="16dp"
+            app:layout_gravity="fill"
+            app:layout_column="2"
+            app:layout_row="1" />
+
+        <TextView
+            android:id="@+id/idealTextView"
+            android:layout_width="103dp"
+            android:layout_height="wrap_content"
+            android:text="8%"
+            android:textSize="16dp"
+            app:layout_gravity="fill"
+            app:layout_column="3"
+            app:layout_row="1" />
+
+    </androidx.gridlayout.widget.GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
